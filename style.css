@@ -101,9 +101,8 @@ li{
   margin-left: 20px;
   color: #252525;
 }
-
-
 /* END OF GENERAL STYLES */
+
 
 /* NAV BAR */
 nav{
@@ -114,7 +113,12 @@ nav{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
 }
 
-nav ul {
+nav{
+  display: grid;
+  transition: background 1s ease;
+  align-items:center;
+}
+nav ul{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,10 +132,6 @@ nav ul {
 
 nav li {
   float: left;
-}
-
-nav li .active a {
-  text-decoration: underline;
 }
 
 nav li a {
@@ -172,7 +172,10 @@ nav li a {
 /* END OF NAV BAR */
 
 
-
+nav li.active a {
+    border-top: 3px solid #252525;
+    color: #252525;
+}
 /* ABOUT SECTION */
 .intro{
   margin: 0 auto;
@@ -204,8 +207,6 @@ nav li a {
 /* EXPERIENCE SECTION */
 .experience{
   margin: 0 auto;
-  padding-top: 10%;
-  padding-bottom: 0%;
   width: 70%;
 }
 .experience-link{
@@ -246,8 +247,6 @@ nav li a {
 /* PROJECTS SECTION */
 .projects{
   margin: 0 auto;
-  padding-top: 10%;
-  padding-bottom: 0%;
   width: 70%;
 }
 .project-list{
@@ -280,8 +279,6 @@ nav li a {
 /*SKILLS SECTION*/
 .skills{
   margin: 0 auto;
-  padding-top: 10%;
-  padding-bottom: 0%;
   width: 70%;
 }
 .skill-list{
@@ -329,8 +326,6 @@ nav li a {
 /* CONTACT SECTION */
 .contact{
   margin: 0 auto;
-  padding-top: 10%;
-  padding-bottom: 0%;
   width: 70%;
 }
 .clear {

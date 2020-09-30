@@ -10,22 +10,22 @@ $(window).on("scroll touchmove", function() {
 				$('nav ul').css('background', $("#about").attr("data-color"));
 
 		};
-		if ($(document).scrollTop() > $("#experience-section").position().top) {
+		if ($(document).scrollTop() > $("#experience-section").position().top-100) {
 				$('body').css('background', $("#experience-section").attr("data-color"));
 				$('nav ul').css('background', $("#experience-section").attr("data-color"));
 		};
-		if ($(document).scrollTop() > $("#projects-section").position().top) {
+		if ($(document).scrollTop() > $("#projects-section").position().top-100) {
 
 				$('body').css('background', $("#projects-section").attr("data-color"));
 				$('nav ul').css('background', $("#projects-section").attr("data-color"));;
 		};
-		if ($(document).scrollTop() > $("#skills-section").position().top) {
+		if ($(document).scrollTop() > $("#skills-section").position().top-100) {
 
 				$('body').css('background', $("#skills-section").attr("data-color"));
 				$('nav ul').css('background', $("#skills-section").attr("data-color"));
 
 		};
-		if ($(document).scrollTop() >= $("#contact-section").position().top) {
+		if ($(document).scrollTop() >= $("#contact-section").position().top-100) {
 				$('body').css('background', $("#contact-section").attr("data-color"));
 				$('nav ul').css('background', $("#contact-section").attr("data-color"));
 		};
